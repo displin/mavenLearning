@@ -7,6 +7,11 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>maven05-webapp Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
+  <properties>
+  	<org.springframework.version>4.2.4.RELEASE</org.springframework.version>
+  </properties>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -22,6 +27,52 @@
 		<!-- 仅在编译/测试时运行 -->
 		<scope>provided</scope>
 	</dependency>
+	
+	<!-- Spring依赖 -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-aop</artifactId>
+		<version>4.2.4.RELEASE</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-context</artifactId>
+		<version>${org.springframework.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-core</artifactId>
+		<version>${org.springframework.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-beans</artifactId>
+		<version>${org.springframework.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-web</artifactId>
+		<version>${org.springframework.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-webmvc</artifactId>
+		<version>${org.springframework.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-expression</artifactId>
+		<version>${org.springframework.version}</version>
+	</dependency>
+		
+	<!-- Apache Common Logging依赖 -->
+	<dependency>
+		<groupId>commons-logging</groupId>
+		<artifactId>commons-logging</artifactId>
+		<version>1.2</version>
+	</dependency>
+			
+			
   </dependencies>
   <build>
     <finalName>maven05-webapp</finalName>
